@@ -1,13 +1,37 @@
-body nav {
-  border: solid teal 1px;
-  padding: 10px;
+* {
+  padding: 0;
+  margin: 0;
 }
-body nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+
+@media only screen and (max-width: 600px) {
+  body nav {
+    border: solid teal 1px;
+    background-color: teal;
+  }
+  body nav ul {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  body nav ul li {
+    list-style: none;
+  }
 }
-body nav ul li {
-  list-style: none;
+@media only screen and (min-width: 600px) {
+  body nav ul li {
+    list-style: none;
+    border: solid teal 1px;
+    width: 13vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    background-color: teal;
+  }
 }
