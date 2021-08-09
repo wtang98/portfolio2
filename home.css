@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 600px) {
@@ -21,17 +22,18 @@
   }
 }
 @media only screen and (min-width: 600px) {
-  body nav ul li {
+  body nav ul {
     list-style: none;
-    border: solid teal 1px;
-    width: 13vw;
-    height: 100vh;
-    margin: 0;
+    border: teal;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 0;
+    justify-content: center;
     background-color: teal;
+    height: 100vh;
+  }
+  body nav ul li {
+    font-size: 35px;
   }
 }
