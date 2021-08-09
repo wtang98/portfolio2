@@ -1,7 +1,13 @@
-body nav {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body nav ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 body nav ul li {
   list-style: none;

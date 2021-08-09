@@ -1,12 +1,14 @@
-
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    
     nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
             li{
                 list-style: none;
             }
