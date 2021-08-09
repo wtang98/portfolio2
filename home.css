@@ -1,12 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
+body nav {
+  border: solid teal 1px;
+  padding: 10px;
 }
-
 body nav ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
 }
 body nav ul li {

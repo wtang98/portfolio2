@@ -1,13 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import 'assets/writing-colors/fonts/writing';
+
 body{
     nav{
+        border: solid $primary-color 1px;
+        padding:10px;
         ul{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: row;
             li{
                 list-style: none;
