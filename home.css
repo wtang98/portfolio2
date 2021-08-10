@@ -2,22 +2,23 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Hahmlet", serif;
 }
 
 @media only screen and (max-width: 768px) {
-  body nav {
+  body div.sidenav {
     border: solid teal 1px;
     background-color: teal;
   }
-  body nav ul {
+  body div.sidenav ul {
     margin: 0;
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
   }
-  body nav ul li {
+  body div.sidenav ul li {
     list-style: none;
     font-size: 18px;
   }
@@ -33,22 +34,8 @@
 @media only screen and (min-width: 768px) {
   body section.firstpage {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-  }
-  body section.firstpage nav ul {
-    list-style: none;
-    border: teal;
-    width: 250px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: teal;
-    height: 100vh;
-  }
-  body section.firstpage nav ul li {
-    font-size: 35px;
+    text-align: center;
   }
   body section.firstpage div.landing {
     display: flex;
@@ -56,6 +43,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100vw;
+    margin-left: 20vw;
+  }
+  body section.firstpage div.sidenav {
+    height: 100%;
+    position: fixed;
+    position: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    width: 25vw;
+  }
+  body section.firstpage div.sidenav ul {
+    list-style: none;
+    border: teal;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    height: 100vh;
+  }
+  body section.firstpage div.sidenav ul li {
+    font-size: 20px;
   }
 }
