@@ -53,7 +53,7 @@
     text-align: center;
   }
   body .landing__header1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   body .landing__header2 {
     font-size: 15px;
@@ -63,6 +63,15 @@
   }
   body .portfolio {
     height: 90vh;
+    margin-left: 10vw;
+  }
+  body .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  body .gallery img {
+    height: 100%;
+    width: 50%;
   }
   body .aboutanchor {
     height: 10vh;
@@ -71,22 +80,22 @@
     height: 90vh;
   }
   body .about__header1 {
-    font-size: 30px;
+    font-size: 20px;
   }
   body .about__header1-para {
-    font-size: 15px;
+    font-size: 10px;
   }
   body .about__header2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   body .about__header2-para {
-    font-size: 15px;
+    font-size: 10px;
   }
   body .about__header3 {
-    font-size: 30px;
+    font-size: 20px;
   }
   body .about__header3-para {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -156,6 +165,18 @@
   }
   .portfolio__header1 {
     font-size: 40px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery img {
+    height: 15%;
+    width: 20%;
   }
 
   .about {
