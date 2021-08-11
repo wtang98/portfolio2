@@ -9,15 +9,13 @@
 //mobile/tablet
     body{
         background: linear-gradient(teal, white);
-            div.nav{
+            .nav{
                 border: solid $primary-color 1px;
                 background-color: $primary-color;          
                 position: fixed;
                 top: 0;
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
-                margin: 5px;
+                height: auto;
                 ul{
                     margin: 0;
                     padding:15px;
@@ -25,6 +23,7 @@
                     align-items: center;
                     justify-content: space-around;
                     flex-direction: row;
+                    height: 10vh;
                     li{
                         list-style: none;
                         font-size: 18px;
@@ -34,30 +33,60 @@
                         }
                     }
                 }
-            }    
-        section.landanchor{
+                .icon{
+                    color: $secondary-color;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }   
+        .landanchor{
             height: 10vh;
         }
-        div.landing{
+        .landing{
             height: 90vh;
             margin-top: -10vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            text-align: center;       
+            text-align: center;
+            &__header1{
+                font-size: 30px;
+            }
+            &__header2{
+                font-size: 15px;
+            }
         }
-        section.portanchor{
+        .portanchor{
             height: 10vh;
         }
-        section.portfolio{
+        .portfolio{
             height: 90vh;
         }
-        section.aboutanchor{
+        .aboutanchor{
             height: 10vh;
         }
-        section.about{
+        .about{
             height: 90vh;
+            &__header1{
+                font-size: 30px;   
+            }
+            &__header1-para{
+                font-size: 15px;
+            }
+            &__header2{
+                font-size: 30px;
+            }
+            &__header2-para{
+                font-size: 15px;
+            }
+            &__header3{
+                font-size: 30px;
+            }
+            &__header3-para{
+                font-size: 15px;
+            }
         }
         }
     }
@@ -65,15 +94,15 @@
 //desktop
     body{
         background: linear-gradient($primary-color, white);
-        section.firstpage{
+        .firstpage{
             display: flex;
             flex-direction: column;
             text-align: center;
             
-            div.landing{
+            .landing{
                 margin-left: 25vh;
                 width: 75vw;
-                height: 90px;
+                height: 100vh;
                 font-size: large;
                 display: flex;
                 flex-direction: column;
@@ -81,9 +110,14 @@
                 align-items: center;
                 text-align: center;
                 margin-left: 20vw;
-
+                &__header1{
+                    font-size: 40px;
+                }
+                &__header2{
+                    font-size: 15px;
+                }
             }    
-            div.nav{
+            .nav{
                 height: 100%;
                 position: fixed;
                 position: 0;
@@ -92,7 +126,7 @@
                 left: 0; 
                 overflow-x: hidden;
                 width: 25vw;
-
+                
                 ul{
                     list-style: none;
                     border: $primary-color;
@@ -104,29 +138,51 @@
                     background-color: $primary-color;
                     height: 100vh;
                     li{
-                        font-size: 20px;
+                        font-size: 35px;
                         margin: 5px;
                         a.navlabel{
                             text-decoration: none;
                             color: black;
                         }
                     }
+                    .icon{
+                        color: $secondary-color;
+                        font-size: 30px;
+                    }
                 }
             }
             }
     }
-        section.portfolio{
-            height: 80vh;
+        .portfolio{
+            height: 100vh;
             margin-left: 21vw;
-            font-size: large;
-        }
-        section.about{
-            height: 80vh;
+            &__header1{
+                font-size: 40px;
+            }
+            }
+        .about{
+            height: 100vh;
             margin-left: 21vw;
-            font-size: large;
             display: flex;
             flex-direction: column;
-            // justify-content: center;
+            &__header1{
+                font-size: 40px;   
+            }
+            &__header1-para{
+                font-size: 20px;
+            }
+            &__header2{
+                font-size: 40px;
+            }
+            &__header2-para{
+                font-size: 20px;
+            }
+            &__header3{
+                font-size: 40px;
+            }
+            &__header3-para{
+                font-size: 20px;
+            }
         }
 } 
 
