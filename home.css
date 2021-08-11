@@ -6,6 +6,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    background: linear-gradient(teal, white);
+  }
   body div.nav {
     border: solid teal 1px;
     background-color: teal;
@@ -25,8 +28,14 @@
     list-style: none;
     font-size: 18px;
   }
+  body div.nav ul li a.navlabel {
+    text-decoration: none;
+    color: black;
+  }
+  body section.landanchor {
+    height: 10vh;
+  }
   body div.landing {
-    margin-top: 59px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -34,21 +43,30 @@
     flex-direction: column;
     text-align: center;
   }
+  body section.portanchor {
+    height: 10vh;
+  }
   body section.portfolio {
     height: 100vh;
+  }
+  body section.aboutanchor {
+    height: 10vh;
   }
   body section.about {
     height: 100vh;
   }
 }
 @media only screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(teal, white);
+  }
   body section.firstpage {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   body section.firstpage div.landing {
-    font-size: x-large;
+    font-size: large;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,21 +97,23 @@
   }
   body section.firstpage div.nav ul li {
     font-size: 20px;
+    margin: 5px;
   }
   body section.firstpage div.nav ul li a.navlabel {
     text-decoration: none;
+    color: black;
   }
 
   section.portfolio {
     height: 100vh;
     margin-left: 22vw;
-    font-size: x-large;
+    font-size: large;
   }
 
   section.about {
     height: 100vh;
     margin-left: 22vw;
-    font-size: x-large;
+    font-size: large;
     display: flex;
     flex-direction: column;
   }

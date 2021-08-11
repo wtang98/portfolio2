@@ -8,6 +8,7 @@
 @media only screen and (max-width: 767px){
 //mobile/tablet
     body{
+        background: linear-gradient(teal, white);
             div.nav{
                 border: solid $primary-color 1px;
                 background-color: $primary-color;          
@@ -24,21 +25,32 @@
                     li{
                         list-style: none;
                         font-size: 18px;
+                        a.navlabel{
+                            text-decoration: none;
+                            color: black;
+                        }
                     }
                 }
             }
-            div.landing{
-                margin-top: 59px;
-                width: 100vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                text-align: center;
-                
-            }
+        section.landanchor{
+            height: 10vh;
+        }
+        div.landing{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;            
+        }
+        section.portanchor{
+            height: 10vh;
+        }
         section.portfolio{
             height: 100vh;
+        }
+        section.aboutanchor{
+            height: 10vh;
         }
         section.about{
             height: 100vh;
@@ -48,13 +60,14 @@
 @media only screen and (min-width: 768px){
 //desktop
     body{
+        background: linear-gradient($primary-color, white);
         section.firstpage{
             display: flex;
             flex-direction: column;
             text-align: center;
             
             div.landing{
-                font-size: x-large;
+                font-size: large;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -85,8 +98,10 @@
                     height: 100vh;
                     li{
                         font-size: 20px;
+                        margin: 5px;
                         a.navlabel{
                             text-decoration: none;
+                            color: black;
                         }
                     }
                 }
@@ -96,12 +111,12 @@
         section.portfolio{
             height: 100vh;
             margin-left: 22vw;
-            font-size: x-large;
+            font-size: large;
         }
         section.about{
             height: 100vh;
             margin-left: 22vw;
-            font-size: x-large;
+            font-size: large;
             display: flex;
             flex-direction: column;
             // justify-content: center;
