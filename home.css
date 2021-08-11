@@ -15,6 +15,9 @@
     position: fixed;
     top: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
   }
   body div.nav ul {
     margin: 0;
@@ -36,7 +39,8 @@
     height: 10vh;
   }
   body div.landing {
-    width: 100vw;
+    height: 90vh;
+    margin-top: -10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,13 +51,13 @@
     height: 10vh;
   }
   body section.portfolio {
-    height: 100vh;
+    height: 90vh;
   }
   body section.aboutanchor {
     height: 10vh;
   }
   body section.about {
-    height: 100vh;
+    height: 90vh;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -66,6 +70,9 @@
     text-align: center;
   }
   body section.firstpage div.landing {
+    margin-left: 25vh;
+    width: 75vw;
+    height: 90px;
     font-size: large;
     display: flex;
     flex-direction: column;
@@ -105,14 +112,14 @@
   }
 
   section.portfolio {
-    height: 100vh;
-    margin-left: 22vw;
+    height: 80vh;
+    margin-left: 21vw;
     font-size: large;
   }
 
   section.about {
-    height: 100vh;
-    margin-left: 22vw;
+    height: 80vh;
+    margin-left: 21vw;
     font-size: large;
     display: flex;
     flex-direction: column;

@@ -15,6 +15,9 @@
                 position: fixed;
                 top: 0;
                 width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin: 5px;
                 ul{
                     margin: 0;
                     padding:15px;
@@ -31,29 +34,30 @@
                         }
                     }
                 }
-            }
+            }    
         section.landanchor{
             height: 10vh;
         }
         div.landing{
-            width: 100vw;
+            height: 90vh;
+            margin-top: -10vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            text-align: center;            
+            text-align: center;       
         }
         section.portanchor{
             height: 10vh;
         }
         section.portfolio{
-            height: 100vh;
+            height: 90vh;
         }
         section.aboutanchor{
             height: 10vh;
         }
         section.about{
-            height: 100vh;
+            height: 90vh;
         }
         }
     }
@@ -67,6 +71,9 @@
             text-align: center;
             
             div.landing{
+                margin-left: 25vh;
+                width: 75vw;
+                height: 90px;
                 font-size: large;
                 display: flex;
                 flex-direction: column;
@@ -109,13 +116,13 @@
             }
     }
         section.portfolio{
-            height: 100vh;
-            margin-left: 22vw;
+            height: 80vh;
+            margin-left: 21vw;
             font-size: large;
         }
         section.about{
-            height: 100vh;
-            margin-left: 22vw;
+            height: 80vh;
+            margin-left: 21vw;
             font-size: large;
             display: flex;
             flex-direction: column;
