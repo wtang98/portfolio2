@@ -15,7 +15,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 10vh;
   }
   body .nav .icon {
     text-decoration: none;
@@ -45,7 +45,7 @@
   }
   body .nav ul li a.navlabel {
     text-decoration: none;
-    color: black;
+    color: #e0ffff;
   }
   body .nav .icon {
     color: #e0ffff;
@@ -58,44 +58,82 @@
   }
   body .landing {
     height: 90vh;
+    width: 100%;
     margin-top: -10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
   }
   body .landing__header1 {
     font-size: 25px;
+    color: #e0ffff;
   }
   body .landing__header2 {
     font-size: 15px;
+    color: #e0ffff;
   }
   body .portanchor {
     height: 10vh;
   }
   body .portfolio {
-    height: 90vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    height: 150vh;
+    width: 100%;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    color: #e0ffff;
   }
   body .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 fr);
   }
-  body .gallery img {
-    height: 100%;
-    width: 50%;
+  body .gallery__img1 {
+    margin-top: 2vh;
+    height: 30vh;
+    width: 35vh;
+    grid-row: 1/2;
+  }
+  body .gallery__img2 {
+    height: 30vh;
+    width: 35vh;
+    grid-row: 3/4;
+  }
+  body .gallery__img3 {
+    height: 30vh;
+    width: 35vh;
+    grid-row: 5/6;
+  }
+  body .gallery__text1 {
+    width: 100%;
+    font-size: 12px;
+    grid-row: 2/3;
+    width: 80vw;
+  }
+  body .gallery__text2 {
+    font-size: 12px;
+    grid-row: 4/5;
+    width: 80vw;
+  }
+  body .gallery__text3 {
+    font-size: 12px;
+    grid-row: 6/7;
+    width: 80vw;
+    color: teal;
   }
   body .aboutanchor {
     height: 10vh;
   }
   body .about {
+    color: teal;
     height: 90vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   body .about__header1 {
     font-size: 20px;
@@ -124,24 +162,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  body .firstpage .landing {
-    margin-left: 25vh;
-    width: 75vw;
-    height: 100vh;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 20vw;
-  }
-  body .firstpage .landing__header1 {
-    font-size: 40px;
-  }
-  body .firstpage .landing__header2 {
-    font-size: 15px;
   }
   body .firstpage .nav {
     height: 100vh;
@@ -185,16 +205,41 @@
   }
   body .firstpage .nav ul li a.navlabel {
     text-decoration: none;
-    color: black;
+    color: #e0ffff;
   }
   body .firstpage .nav ul .icon {
     color: #e0ffff;
     font-size: 30px;
   }
+  body .firstpage .landing {
+    width: 75vw;
+    height: 100vh;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20vw;
+  }
+  body .firstpage .landing__header1 {
+    font-size: 40px;
+    color: #e0ffff;
+  }
+  body .firstpage .landing__header2 {
+    font-size: 15px;
+    color: #e0ffff;
+  }
+
+  .portanchor {
+    height: 1vh;
+  }
 
   .portfolio {
-    height: 110vh;
+    height: 150vh;
+    width: 75vw;
     margin-left: 21vw;
+    color: #e0ffff;
   }
   .portfolio__header1 {
     font-size: 40px;
@@ -226,13 +271,19 @@
     grid-row: 3/4;
   }
   .gallery__text1 {
-    font-size: 12px;
+    margin-top: 1.5vh;
+    font-size: 18px;
   }
   .gallery__text2 {
-    font-size: 12px;
+    font-size: 18px;
   }
   .gallery__text3 {
-    font-size: 12px;
+    font-size: 18px;
+    color: teal;
+  }
+
+  .aboutanchor {
+    height: 1vh;
   }
 
   .about {
@@ -240,6 +291,7 @@
     margin-left: 21vw;
     display: flex;
     flex-direction: column;
+    color: teal;
   }
   .about__header1 {
     font-size: 40px;
