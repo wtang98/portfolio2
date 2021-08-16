@@ -17,6 +17,7 @@
     width: 100%;
     height: 9vh;
     min-height: 73px;
+    z-index: 9999;
   }
   body .nav .icon {
     text-decoration: none;
@@ -144,6 +145,7 @@ body .back .inner {
     display: block;
     border-radius: 6px;
     backface-visibility: hidden;
+    background: linear-gradient(40deg, rgba(0, 128, 128, 0.6), rgba(0, 0, 0, 0.4));
   }
   body .front .inner {
     grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
@@ -154,14 +156,14 @@ body .back .inner {
     margin-bottom: 0.3em;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #fff;
+    color: #01ffff;
     font-weight: 500;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   }
   body .back {
     transform: rotateY(180deg);
-    background-color: #fff;
-    border: 2px solid #f0f0f0;
+    background-color: #e0ffff;
+    border: 2px solid teal;
   }
   body .back .inner {
     grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
@@ -196,8 +198,8 @@ body .back .inner {
     line-height: 2.9em;
     min-width: 3em;
     background-color: transparent;
-    border: solid 2px #fff;
-    color: #fff;
+    border: solid 2px #01ffff;
+    color: #01ffff;
     border-radius: 4px;
     text-align: center;
     left: 50%;
@@ -206,7 +208,7 @@ body .back .inner {
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   }
   body .button:hover {
-    background-color: #fff;
+    background-color: #e0ffff;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     text-shadow: none;
     color: teal;
@@ -233,6 +235,19 @@ body .back .inner {
   }
   body ::-webkit-scrollbar-thumb:hover {
     background: teal;
+  }
+  body .sectionanchor {
+    height: 1vh;
+  }
+  body .skills {
+    height: 100vh;
+    margin-left: 21vw;
+    display: flex;
+    flex-direction: column;
+    color: teal;
+  }
+  body .skills__header1 {
+    font-size: 40px;
   }
   body .aboutanchor {
     height: 10vh;
@@ -347,10 +362,6 @@ body .back .inner {
   body .firstpage .landing__header2 {
     font-size: 15px;
     color: #e0ffff;
-  }
-
-  .portanchor {
-    height: 1vh;
   }
 
   .portfolio {
@@ -531,15 +542,10 @@ body .back .inner {
     margin-left: 21vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: teal;
   }
   .skills__header1 {
     font-size: 40px;
-  }
-
-  .aboutanchor {
-    height: 1vh;
   }
 
   .about {
@@ -547,7 +553,6 @@ body .back .inner {
     margin-left: 21vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: teal;
   }
   .about__header1 {
