@@ -7,7 +7,7 @@
 
 @media only screen and (max-width: 767px) {
   body {
-    background: linear-gradient(teal, white);
+    background: linear-gradient(teal, #e0ffff);
   }
   body .nav {
     border: solid teal 1px;
@@ -48,9 +48,6 @@
   body .nav ul li a.navlabel {
     text-decoration: none;
     color: #e0ffff;
-  }
-  body .nav ul li a.navlabel:hover {
-    color: teal;
   }
   body .nav .icon {
     color: #e0ffff;
@@ -151,7 +148,6 @@
     width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   body .about__header1 {
     font-size: 20px;
@@ -270,52 +266,6 @@
   }
   .portfolio__header1 {
     font-size: 40px;
-  }
-
-  .gallery {
-    display: grid;
-    width: 75vw;
-    grid-template-columns: repeat(2 fr);
-    grid-template-rows: repeat(3 fr);
-    grid-gap: 50px;
-  }
-  .gallery__img1 {
-    margin-top: 2.5vh;
-    height: 25vh;
-    width: 35vw;
-    max-width: 300px;
-    max-height: 450px;
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-  .gallery__img2 {
-    margin-top: 1vh;
-    height: 25vh;
-    width: 35vw;
-    max-width: 300px;
-    max-height: 450px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .gallery__img3 {
-    margin-top: 1vh;
-    height: 25vh;
-    width: 35vw;
-    max-width: 300px;
-    max-height: 450px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .gallery__text1 {
-    margin-top: 1.5vh;
-    font-size: 20px;
-  }
-  .gallery__text2 {
-    font-size: 20px;
-  }
-  .gallery__text3 {
-    font-size: 20px;
-    color: teal;
   }
 
   .aboutanchor {
