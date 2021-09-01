@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="home.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1c0c049859.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +26,6 @@
                     <li>
                         <a class="navlabel" href="#portfolio">
                             Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a class="navlabel" href="#skills">
-                            Skills
                         </a>
                     </li>
                     <li>
@@ -70,7 +67,8 @@
         <section class="portfolio">
             <h2 class="portfolio__header1">Portfolio</h2>
             <div class="wrapper">
-                <div class="card">
+                
+                <div data-aos="flip-left" class="card">
                     <input type="checkbox" id="card1" class="more" aria-hidden="true">
                     <div class="content">
                         <div class="front" style="background-image: url('https://i.redd.it/yaegboywv0y21.jpg')">
@@ -98,8 +96,8 @@
                         </div>
                     </div>
                 </div>
-
-                    <div class="card">
+                
+                    <div data-aos="flip-right" class="card">
                         <input type="checkbox" id="card2" class="more" aria-hidden="true">
                         <div class="content">
                             <div class="front" style="background-image: url('https://i.redd.it/syofae74umj31.jpg')">
@@ -128,18 +126,8 @@
                         </div>
                     </div>
             </div>
-
         </section>
 
-        <section class="skillsanchor" id="skills"></section>
-
-        <section class="skills">
-            <h2 class="skills__header1">Skills</h2>
-                <p class="skills__header1-para">
-                    During the course I have learnt about the 
-                </p>
-            
-        </section>
 
         <section class="aboutanchor" id="about"></section>
 
