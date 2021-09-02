@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="home.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1c0c049859.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +26,6 @@
                     <li>
                         <a class="navlabel" href="#portfolio">
                             Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a class="navlabel" href="#skills">
-                            Skills
                         </a>
                     </li>
                     <li>
@@ -52,7 +49,7 @@
             
             <section class="landanchor" id="firstpage"></section>
 
-            <div class="landing"> 
+            <div class="landing" id= "landing"> 
                 <h2 class="landing__header1">
                     Hello World!
                     I'm Wei-Tong Tang, a softWareDeveloper
@@ -65,21 +62,18 @@
             </div>
         </section>
 
-        <!-- <Section class="landimg">
-
-        </Section> -->
         <section class="portanchor" id="portfolio"></section>
 
         <section class="portfolio">
             <h2 class="portfolio__header1">Portfolio</h2>
-            <div class="gallery1"></div>
             <div class="wrapper">
-                <div class="card">
+                
+                <div data-aos="flip-left" class="card">
                     <input type="checkbox" id="card1" class="more" aria-hidden="true">
                     <div class="content">
-                        <div class="front" style="background-image: url('https://i.redd.it/yaegboywv0y21.jpg')">
+                        <div class="front" style="background-image: url('./assets/writing-colors/fonts/pictures/calculator.PNG')">
                             <div class="inner">
-                                <h2>First Messy Desk</h2>
+                                <h2>Calculator</h2>
                                 <label for="card1" class="button" aria-hidden="true">
                                     Details
                                 </label>
@@ -90,12 +84,9 @@
                                 <div class="info">
                                     
                                 </div>
-        
                                 <div class="description">
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                        ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                        tenetur nemo amet temporibus, enim soluta nam, debitis.
+                                        My first JavaScript based project was to build a calculator.
                                     </p>
                                 </div>
                                 <label for="card1" class="button return" aria-hidden="true">
@@ -105,14 +96,13 @@
                         </div>
                     </div>
                 </div>
-        
                 
-                    <div class="card">
+                    <div data-aos="flip-right" class="card">
                         <input type="checkbox" id="card2" class="more" aria-hidden="true">
                         <div class="content">
-                            <div class="front" style="background-image: url('https://i.redd.it/syofae74umj31.jpg')">
+                            <div class="front" style="background-image: url('./assets/writing-colors/fonts/pictures/reaction\ game.PNG')">
                                 <div class="inner">
-                                    <h2>Second Messy Desk</h2>
+                                    <h2>Reaction Aim Game</h2>
                                     <label for="card2" class="button" aria-hidden="true">
                                         Details
                                     </label>
@@ -123,12 +113,9 @@
                                     <div class="info">
                                         
                                     </div>
-            
                                     <div class="description">
                                         <p>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                            ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                            tenetur nemo amet temporibus, enim soluta nam, debitis.
+                                            A reaction aim game that uses HTML, SCSS and ES6 JavaScript.
                                         </p>
                                     </div>
                                     <label for="card2" class="button return" aria-hidden="true">
@@ -138,102 +125,31 @@
                             </div>
                         </div>
                     </div>
-        
-                    
-                        <div class="card">
-                            <input type="checkbox" id="card3" class="more" aria-hidden="true">
-                            <div class="content">
-                                <div class="front" style="background-image: url('https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1517366286000/photosp/c8984561-1941-48b7-ac16-211e9fcc0eaf/stock-photo-messy-computer-printer-messy-desk-c8984561-1941-48b7-ac16-211e9fcc0eaf.jpg')">
-                                    <div class="inner">
-                                        <h2>Third Messy Desk</h2>
-                                        <label for="card3" class="button" aria-hidden="true">
-                                            Details
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <div class="info">
-                                            
-                                        </div>
-                
-                                        <div class="description">
-                                            <p>
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                                tenetur nemo amet temporibus, enim soluta nam, debitis.
-                                            </p>
-                                        </div>
-                                        <label for="card3" class="button return" aria-hidden="true">
-                                            <i class="fas fa-arrow-left"></i>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                       
-                            <div class="card">
-                                <input type="checkbox" id="card4" class="more" aria-hidden="true">
-                                <div class="content">
-                                    <div class="front" style="background-image: url('https://i.redd.it/yaegboywv0y21.jpg')">
-                                        <div class="inner">
-                                            <h2>Fourth Messy Desk</h2>
-                                            <label for="card4" class="button" aria-hidden="true">
-                                                Details
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="back">
-                                        <div class="inner">
-                                            <div class="info">
-                                                
-                                            </div>
-                    
-                                            <div class="description">
-                                                <p>
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                                    ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                                    tenetur nemo amet temporibus, enim soluta nam, debitis.
-                                                </p>
-                                            </div>
-                                            <label for="card4" class="button return" aria-hidden="true">
-                                                <i class="fas fa-arrow-left"></i>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
             </div>
         </section>
 
-        <section class="skillsanchor" id="skills"></section>
-
-        <section class="skills">
-            <h2 class="skills__header1">Skills</h2>
-            
-        </section>
 
         <section class="aboutanchor" id="about"></section>
 
         <section class="about">
             <h2 class="about__header1">About Me</h2>
-            <p class="about__header1-para">
-                I'm a London based software developer passionate about writing 
-                concise code. I am currently undertaking the intensive _nology 
-                12 week software development course.
-            </p>
+                <p class="about__header1-para">
+                    I'm a London based software developer passionate about writing 
+                    concise code. I am currently undertaking the intensive _nology 
+                    12 week software development course.
+                </p>
 
             <h2 class="about__header2">Education</h2>
-            <p class="about__header2-para">
-                I attended Swansea univeristy to read War and Society where i received a 2:1. 
-            </p>
+                <p class="about__header2-para">
+                    I attended Swansea univeristy to read War and Society where i received a 2:1. 
+                </p>
 
             <h2 class="about__header3">Experience</h2>
-            <p class="about__header3-para">
-                During the 12 week _nology course I worked alongside other programmers 
-                learning HTML, CSS/SCSS, React, JavaScript, Git....
-            </p>
+                <p class="about__header3-para">
+                    During the 12 week _nology course I worked alongside other programmers 
+                    learning HTML, CSS/SCSS, React, JavaScript, Git....
+                </p>
         </section>
+        <script src="./index.js"></script>
     </body>
 </html>
