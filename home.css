@@ -648,6 +648,8 @@ body .back .inner {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .wrapper .card {
     width: 500px;
